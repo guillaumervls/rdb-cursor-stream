@@ -26,7 +26,7 @@ CursorStream.prototype._read = function read() {
       return;
     }
     if (this.push(item)) {
-      process.nextTick(read.bind(this));
+      read.bind(this);
     }
   }.bind(this));
 };
