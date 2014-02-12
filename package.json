@@ -1,0 +1,24 @@
+{
+  "name": "rdb-cursor-stream",
+  "version": "0.0.0",
+  "description": "Streams from RethinkDB cursors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guillaumervls/rdb-cursor-stream.git"
+  },
+  "keywords": [
+    "rethinkdb",
+    "stream",
+    "cursor"
+  ],
+  "author": "guillaumervls",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guillaumervls/rdb-cursor-stream/issues"
+  },
+  "homepage": "https://github.com/guillaumervls/rdb-cursor-stream"
+}
