@@ -22,7 +22,7 @@ r.connect( //...
 // Make a query to get a cursor
 r.table('myTable').run(connection, function(err, cursor) {
   var stream = new CursorStream(cursor);
-  cursor.pipe(//... do whatever you want with your stream !
+  stream.pipe(//... do whatever you want with your stream !
 });
 ```
 
