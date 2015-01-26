@@ -16,12 +16,12 @@ function CursorStream(cursor) {
 }
 
 CursorStream.prototype._read = function read() {
-  if (!(this._cursor && this._cursor.hasNext())) {
-    this.push(null);
-    return;
-  }
   this._cursor.next(function (err, item) {
     if (err) {
+      if (((err.name === "RqlDriverError") && err.message === "No more rows in the cursor.")) {
+        this.push(null);
+        return;
+      }
       this.emit('error', err);
       return;
     }
